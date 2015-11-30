@@ -7,3 +7,30 @@ $sidebar-sm-columns:    4;
 
 // Colors
 $brand-primary:         #27ae60;
+$brand-yellow: 			#c7be0d;
+
+/* Media Queries Widths & Mixins */
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$avenir: 'Nunito', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+@mixin mobile() {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

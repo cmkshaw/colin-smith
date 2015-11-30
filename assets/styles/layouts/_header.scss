@@ -1,0 +1,140 @@
+$transparent-header: rgba(0, 0, 0, 0.7);
+
+header{
+	background: $transparent-header;
+}
+
+.brand{
+	 line-height: 0; 
+     font-size: 0;
+     display: inline-block;
+     color: transparent; 
+     background: #000 url('../images/Logo-2x.png') 60px 15px no-repeat;
+     width: 230px;
+     height: 120px;
+     background-size: 110px 80px;
+     box-sizing: border-box;
+     float: left;
+
+     @media (max-width: #{$mobile-width}) {
+     	display: none;
+     }
+}
+
+.slicknav_brand {
+	height: 80px;
+	padding-top: 12px;
+	img {
+		max-width: 78px;
+	}
+}
+
+.slicknav_btn{
+	border-radius: 50%;
+	height: 40px;
+    width: 40px;
+    padding: 14px 11px;
+    margin-top: 20px;
+    background: #000!important;
+    margin-right: 20px;
+}
+
+.slicknav_icon-bar{
+	border-radius: 0!important;
+	background-color: $brand-yellow!important;
+}
+
+.slicknav_menu{
+	background: $transparent-header!important;
+	padding: 0!important;
+}
+
+.slicknav_open{
+    height: 60px;
+    border-radius: 100% 100% 0 0;
+    margin-bottom: 0;
+}
+
+.slicknav_open .slicknav_icon-bar {
+	background-color: #fff!important;
+}
+
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+    margin-top: 4px!important;
+}
+
+.slicknav_nav{
+	background: #000;
+	background: #000;
+    position: absolute;
+    right: 0;
+    top: 125px;
+    min-width: 50%;
+}
+
+.nav-primary{
+	ul{
+		float: right;
+		padding-top:70px;
+	}
+
+	ul li{
+		display: inline-block;
+	}
+
+	ul li a{
+		color: #fff;
+		padding-bottom: 20px;
+
+		&:hover, &:focus{
+			background-color: $brand-yellow;
+			color: #000;
+		}
+	}
+	
+	.current-menu-item a{
+		background: #000;
+		color: $brand-yellow;
+	}
+
+	 @media (max-width: #{$mobile-width}) {
+	 	float:right;
+	 	display: inline-block;
+	 }
+}
+
+.header-social{
+	@media (max-width: #{$mobile-width}) {
+		display: none;
+	}
+}
+
+.social{
+	.social-facebook,
+	.social-instagram,
+	.social-mail{
+
+	}
+}
+
+//PAGE SPEICIFC
+.page .banner{
+	background-image: url('../images/page-bg.jpg');
+}
+
+.page .slicknav_menu{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/home-bg.jpg')!important;
+}
+
+.home{
+	.banner{
+		background-image: none;
+	}
+	background-image: url('../images/home-bg.jpg');
+	background-size: cover;
+
+	@media (max-width: #{$mobile-width}) {
+		background-size: 200%;
+	}
+}
+
