@@ -4,6 +4,10 @@ header{
 	background: $transparent-header;
 }
 
+.container{
+	position: relative;
+}
+
 .brand{
 	 line-height: 0; 
      font-size: 0;
@@ -104,15 +108,44 @@ header{
 }
 
 .header-social{
+	position:absolute;
+	right: 30px;
 	@media (max-width: #{$mobile-width}) {
 		display: none;
 	}
 }
 
+.social-facebook a{
+	background: url('../images/Facebook-2x.png');
+}
+.social-instagram a {
+	background: url('../images/Instagram-2x.png');
+}
+.social-email a{
+	background: url('../images/Email-2x.png');
+}
+
+$icon-size: 30px;
+
 .social{
-	.social-facebook,
-	.social-instagram,
-	.social-mail{
+	margin: 0;
+	float: right;
+	list-style: none;
+	padding: 0;
+
+	li{
+		display: inline-block;
+	}
+	.social-facebook a,
+	.social-instagram a,
+	.social-email a{
+		line-height: 0; 
+     	font-size: 0;
+     	background-size: $icon-size $icon-size;
+     	display: inline-block;
+     	height: $icon-size;
+     	width: $icon-size;
+     	margin-left:20px;
 
 	}
 }
