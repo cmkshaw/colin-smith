@@ -1,0 +1,13 @@
+.hide-mobile{
+	display:block;
+	@media (max-width: #{$mobile-width}) {
+    	display: none;
+  	}
+}
+
+.show-mobile{
+	display:none;
+	@media (max-width: #{$mobile-width}) {
+    	display: block;
+  	}
+}

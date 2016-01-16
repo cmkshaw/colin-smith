@@ -14,8 +14,25 @@ $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-$avenir: 'Nunito', sans-serif;
+$avenir: 'AvenirNextPro', sans-serif;
 $roboto: 'Roboto', sans-serif;
+$robotothin: 'RobotoThin', sans-serif;
+
+@font-face {
+  font-family: 'AvenirNextPro';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('../fonts/Roboto-Thin.ttf');
+}
+
 
 @mixin mobile() {
   @media (max-width: #{$mobile-width}) {

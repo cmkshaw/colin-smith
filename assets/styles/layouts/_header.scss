@@ -1,11 +1,22 @@
 $transparent-header: rgba(0, 0, 0, 0.7);
 
+
+body{
+	background-color: $transparent-header;
+}
+
 header{
 	background: $transparent-header;
 }
 
 .container{
 	position: relative;
+}
+
+.main-container{
+	max-width: 1200px;
+	background: #fff;
+	margin: 0 auto;
 }
 
 .brand{
@@ -53,11 +64,11 @@ header{
 	padding: 0!important;
 }
 
-.slicknav_open{
-    height: 60px;
-    border-radius: 100% 100% 0 0;
-    margin-bottom: 0;
-}
+// .slicknav_open{
+//     height: 60px;
+//     border-radius: 100% 100% 0 0;
+//     margin-bottom: 0;
+// }
 
 .slicknav_open .slicknav_icon-bar {
 	background-color: #fff!important;
@@ -72,8 +83,18 @@ header{
 	background: #000;
     position: absolute;
     right: 0;
-    top: 125px;
+    top: 80px;
     min-width: 50%;
+    z-index: 9999;
+
+    a {
+    	color: #fff;
+    	&:hover {
+    		background: none!important;
+    		color: $brand-yellow;
+    		text-decoration: none;
+    	}
+    }
 }
 
 .nav-primary{
@@ -147,27 +168,6 @@ $icon-size: 30px;
      	width: $icon-size;
      	margin-left:20px;
 
-	}
-}
-
-//PAGE SPEICIFC
-.page .banner{
-	background-image: url('../images/page-bg.jpg');
-}
-
-.page .slicknav_menu{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/home-bg.jpg')!important;
-}
-
-.home{
-	.banner{
-		background-image: none;
-	}
-	background-image: url('../images/home-bg.jpg');
-	background-size: cover;
-
-	@media (max-width: #{$mobile-width}) {
-		background-size: 200%;
 	}
 }
 
