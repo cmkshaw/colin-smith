@@ -9,14 +9,19 @@ $sidebar-sm-columns:    4;
 $brand-primary:         #27ae60;
 $brand-yellow: 			#c7be0d;
 
+//Transparencies
+$transparent-header: rgba(0, 0, 0, 0.7);
+$transparent-body: rgba(0, 0, 0, 0.4);
+
 /* Media Queries Widths & Mixins */
 $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
 $avenir: 'AvenirNextPro', sans-serif;
+$olympic: 'Olympic', sans-serif;
 $roboto: 'Roboto', sans-serif;
-$robotothin: 'RobotoThin', sans-serif;
+$robotolight: 'RobotoLight', sans-serif;
 
 @font-face {
   font-family: 'AvenirNextPro';
@@ -29,10 +34,14 @@ $robotothin: 'RobotoThin', sans-serif;
 }
 
 @font-face {
-  font-family: 'RobotoThin';
-  src: url('../fonts/Roboto-Thin.ttf');
+  font-family: 'RobotoLight';
+  src: url('../fonts/Roboto-Light.ttf');
 }
 
+@font-face {
+  font-family: 'Olympic';
+  src: url('../fonts/Olympic Branding.ttf');
+}
 
 @mixin mobile() {
   @media (max-width: #{$mobile-width}) {

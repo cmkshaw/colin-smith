@@ -1,20 +1,49 @@
+body,html{
+  height:100%;
+}
+
+body {
+	font-family: $robotolight;
+	line-height:1.5;
+	font-size: 16px;
+	background-color: $transparent-header;
+
+	@media (max-width: #{$mobile-width}) {
+  		font-size: 14px;
+  	}
+}
+
 h1,h2,h3,h4,h5,h6{
 	color: $brand-yellow;
 	font-family: $avenir;
 }
 
 h1{
-	font-size: 60px;
+	font-size: 3.8em;
+	display: inline-block;
+	border-bottom: 2px solid #aaa;
+	@media (max-width: #{$mobile-width}) {
+  		font-size: 3em;
+  	}
+}
+
+h2{
+	font-family: $robotolight;
+	@media (max-width: #{$mobile-width}) {
+  		font-size: 2em;
+  	}
 }
 
 a{
 	color: $brand-yellow;
 }
 
-body {
-	font-family: $robotothin;
-	line-height:1.5;
-	font-size: 16px;
+.content a{
+	&:hover, &:focus{
+		color: $brand-yellow;
+		text-decoration: none;
+		border-bottom: 2px solid $brand-yellow;
+	}
 }
 
 img{

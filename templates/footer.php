@@ -3,6 +3,6 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
   <div class="container copyright">
-    Copyright Colin Smith Woodworking <?php echo date("Y"); ?>
+    &copy; Colin Smith Woodworking <?php echo date("Y"); ?>
   </div>
 </footer>

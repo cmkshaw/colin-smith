@@ -8,13 +8,43 @@
 }
 
 .home{
+	color: #fff;
+	text-align: center;
+	height: 100%;
+
+	h1{
+		font-family: $olympic;
+		color: #fff;
+		font-size: 10em;
+		padding-top:20px;
+		border: 0;
+
+		@media (max-width: #{$mobile-width}) {
+  			font-size: 5em;
+  		}
+	}
+
+	p{
+		font-size: 1.2em;
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 40px 0 75px 0;
+	}
+
+	// .wrap.container{
+	// 	background-color: $transparent-body;
+	// }
+
 	.banner{
 		background-image: none;
 	}
-	background-image: url('../images/home-bg.jpg');
-	background-size: cover;
 
-	@media (max-width: #{$mobile-width}) {
-		background-size: 200%;
+	.main-container{
+		background-image: url('../images/home-bg.jpg');
+		background-size: cover;
+		@media (max-width: #{$mobile-width}) {
+			background-size: 200%;
+		}
 	}
+	
 }
