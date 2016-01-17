@@ -8,11 +8,13 @@
 </div>
 
 	<?php 
-
+	$products = 0;
 	$productCategory = get_field('product_category');
 
 	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'category_name' => $productCategory ) ); ?>
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); 
+	 $products++;
+	?>
 		<div class="product">
 			<h2><?php the_title() ;?></h2>
 			<div class="clearfix"></div>
@@ -37,10 +39,10 @@
 			<p><?php echo $additonal; ?></p>
 		</div>
 		<div class="clearfix"></div>
+		<?php if ( $products == 1) { ?>
 		<hr class="hr-short">
+		<?php } ?>
 		<div class="clearfix"></div>
 
 
 <?php endwhile; wp_reset_query(); ?>
-
-<?php get_template_part('templates/widget-product'); ?>

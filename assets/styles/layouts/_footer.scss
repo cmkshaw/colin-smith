@@ -5,3 +5,22 @@
 	padding:20px;
 	font-size:.8em;
 }
+
+.green{
+	background: $brand-green;
+	padding: 10px 0;
+
+	h3{
+		color: $copy-grey;
+	}
+
+	a, a:hover{
+		color: $copy-grey;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover{
+		border-bottom: 2px solid;
+	}
+}

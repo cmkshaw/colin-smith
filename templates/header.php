@@ -17,9 +17,9 @@
 </header>
 
 <?php 
-  if ( is_page_template('template-products.php') ) {
+  if ( is_page_template('template-products.php') || is_singular('product') ) {
 ?>
-<div class="breadcrumb show-mobile">
+<div class="breadcrumb green show-mobile">
   <div class="wrap container">
    <a href="/" rel="bookmark" title="Home">Back to Home</a>
   </div>
