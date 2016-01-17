@@ -46,5 +46,31 @@
 			background-size: 200%;
 		}
 	}
-	
+}
+
+//PRODUCT
+
+.product-image img{
+ 	margin-bottom: 20px;
+}
+
+.image-main{
+	width: 55%;
+	float:left;
+	margin-right:2%;
+}
+
+.image-second{
+	width: 42%;
+	float:left;
+}
+
+.product-image{
+	img{
+ 		margin-bottom: 20px;
+	}
+
+	@media (max-width: #{$mobile-width}) {
+		width: 100%;
+	}
 }

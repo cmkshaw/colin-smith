@@ -15,3 +15,13 @@
     </nav>
   </div>
 </header>
+
+<?php 
+  if ( is_singular( 'product' ) ){
+?>
+<div class="breadcrumb show-mobile">
+  <div class="wrap container">
+   <a href="/" rel="bookmark" title="Home">Back to Home</a>
+  </div>
+</div>
+<?php } ?>
