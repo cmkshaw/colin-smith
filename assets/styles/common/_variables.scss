@@ -13,7 +13,11 @@ $brand-yellow: 			#c7be0d;
 $transparent-header: rgba(0, 0, 0, 0.7);
 $transparent-body: rgba(0, 0, 0, 0.4);
 
+//Common Elements
+$border-bottom: 2px solid #aaa;
+
 /* Media Queries Widths & Mixins */
+$mobile-sm: 480px;
 $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1024px;

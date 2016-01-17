@@ -10,7 +10,6 @@
 .home{
 	color: #fff;
 	text-align: center;
-	height: 100%;
 
 	h1{
 		font-family: $olympic;
@@ -28,12 +27,12 @@
 		font-size: 1.2em;
 		max-width: 700px;
 		margin: 0 auto;
-		padding: 40px 0 75px 0;
+		padding: 1em 0 2em 0;
 	}
 
-	// .wrap.container{
-	// 	background-color: $transparent-body;
-	// }
+	.wrap.container{
+		min-height: 500px;
+	}
 
 	.banner{
 		background-image: none;
@@ -43,7 +42,10 @@
 		background-image: url('../images/home-bg.jpg');
 		background-size: cover;
 		@media (max-width: #{$mobile-width}) {
-			background-size: 200%;
+			background-image: url('../images/home-bg-mobile.jpg');
+		}
+		@media (max-width: #{$mobile-sm}) {
+			background-image: url('../images/home-bg-mobile-sm.jpg');
 		}
 	}
 }

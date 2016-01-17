@@ -17,7 +17,7 @@
 </header>
 
 <?php 
-  if ( is_singular( 'product' ) ){
+  if ( is_page_template('template-products.php') ) {
 ?>
 <div class="breadcrumb show-mobile">
   <div class="wrap container">
