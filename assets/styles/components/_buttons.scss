@@ -1,8 +1,22 @@
-input[type=submit] {
+
+.btn-submit, input[type=submit] {
     padding:17px 50px; 
     background:$brand-yellow; 
     color:#fff;
     font-weight: bold;
     border:0 none;
     cursor:pointer; 
+}
+
+.btn-attach{
+	padding:17px 50px; 
+	margin-top:10px;
+    border: 2px solid $brand-yellow; 
+    color: $brand-yellow;
+    background:#fff;
+    font-weight: bold;
+    cursor:pointer;
+    display: inline-block;
+    z-index: 0;
+    position: absolute;
 }

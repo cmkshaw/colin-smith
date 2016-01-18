@@ -39,9 +39,7 @@
 			<p><?php echo $additonal; ?></p>
 		</div>
 		<div class="clearfix"></div>
-		<?php if ( $products == 1) { ?>
-		<hr class="hr-short">
-		<?php } ?>
+		<div class="hr-short"></div>
 		<div class="clearfix"></div>
 
 

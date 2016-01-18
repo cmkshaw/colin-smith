@@ -34,9 +34,20 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'contact': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        $(document).on('change', '.file-upload :file', function() {
+          var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+          input.trigger('fileselect', [numFiles, label]);
+        });
+
+        $('.file-upload :file').ready( function() {
+          $(document).on('fileselect', function(event, numFiles, label) {
+              $('.file-upload-label').html(label);
+          });
+        });
       }
     }
   };
@@ -71,7 +82,12 @@
     }
   };
 
+  function hideForm() {
+      console.log('eee');
+  }
+
   // Load Events
   $(document).ready(UTIL.loadEvents);
+
 
 })(jQuery); // Fully reference jQuery after this point.

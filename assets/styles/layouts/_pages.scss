@@ -4,7 +4,7 @@
 }
 
 .page .slicknav_menu{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/home-bg.jpg')!important;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/page-bg-mobile.jpg')!important;
 }
 
 .home{
@@ -26,6 +26,7 @@
 	p{
 		font-size: 1.2em;
 		max-width: 700px;
+		color: #fff;
 		margin: 0 auto;
 		padding: 1em 0 2em 0;
 	}
@@ -51,6 +52,11 @@
 }
 
 //PRODUCT
+
+.product:nth-of-type(1){
+	background: #000;
+	border-bottom: $border-bottom;
+}
 
 .breadcrumb{
 	background: $brand-green;
@@ -81,3 +87,24 @@
 		width: 100%;
 	}
 }
+
+
+//contact
+
+  .google-maps {
+        position: relative;
+        padding-bottom: 37.5%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+
+        @media (max-width: #{$mobile-width}) {
+			padding-bottom: 77.5%; // This is the aspect ratio
+		}
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }

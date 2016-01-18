@@ -9,5 +9,6 @@
   ?>
   <div class="container copyright">
     &copy; Colin Smith Woodworking <?php echo date("Y"); ?>
+    <a class="pull-right" href="/sitemap">Sitemap</a>
   </div>
 </footer>

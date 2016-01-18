@@ -1,17 +1,52 @@
-// Search form
-.search-form {
-  @extend .form-inline;
+.contact-form{
+
+	// input[type=file]{
+	// 	width: 0.1px;
+	// 	height: 0.1px;
+	// 	opacity: 0;
+	// 	overflow: hidden;
+	// 	position: absolute;
+	// 	z-index: -1;
+	// }
+
+	// input[type=file] + label {
+ //    font-size: 1.25em;
+ //    font-weight: 700;
+ //    color: white;
+ //    background-color: black;
+	// display: inline-block;
+	// }
+
+	// input[type=file]:focus + label,
+	// input[type=file] + label:hover {
+	//     background-color: red;
+	// }
+
+	// input[type=file] + label {
+	// cursor: pointer; /* "hand" cursor */
+	// }
+
+	// input[type=file]:focus + label {
+	// 	outline: 1px dotted #000;
+	// 	outline: -webkit-focus-ring-color auto 5px;
+	// }
+
 }
-.search-form label {
-  font-weight: normal;
-  @extend .form-group;
-}
-.search-form .search-field {
-  @extend .form-control;
-}
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-default;
+
+.file-upload{
+	position:relative;
+	margin-bottom: 60px;
+	input {
+   		filter: alpha(opacity=0);
+   		cursor:pointer;
+   		opacity: 0;
+   		z-index: 1;
+   		position: absolute;
+   		top: -20px;
+   		display: block;
+   		height: 50px;
+    	width: 150px
+	}
 }
 
 //FORMS
@@ -19,4 +54,11 @@
 input[type=text], input[type=email] {
     padding:15px 10px;
     border:1px solid $copy-grey;
+}
+
+div.wpcf7-response-output{
+	border: 0;
+	font-size:18px;
+	padding: 0;
+	margin: 40px 0;
 }
