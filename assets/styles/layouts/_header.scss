@@ -155,6 +155,7 @@ header{
 .header-social{
 	position:absolute;
 	right: 30px;
+	float: right;
 	@media (max-width: #{$mobile-width}) {
 		display: none;
 	}
@@ -174,7 +175,6 @@ $icon-size: 30px;
 
 .social{
 	margin: 0;
-	float: right;
 	list-style: none;
 	padding: 0;
 

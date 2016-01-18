@@ -71,3 +71,9 @@ p{
   		 margin-top: 20px;
   	}
 }
+
+.hr-short{
+	border-bottom: $border-bottom;
+	max-width: 400px;
+	margin: 2em 0 4em 0;
+}
