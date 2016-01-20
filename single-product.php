@@ -21,6 +21,9 @@
 		<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
 	</div>
 
+	<div class="clearfix"></div>
+	<p><?php echo $additonal; ?></p>
+
 
 <?php endwhile; else: ?>
 
