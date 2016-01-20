@@ -82,10 +82,6 @@
     }
   };
 
-  function hideForm() {
-      console.log('eee');
-  }
-
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
