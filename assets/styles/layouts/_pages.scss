@@ -8,14 +8,14 @@
 	text-align: center;
 
 	h1{
-		font-family: $olympic;
+		font-family: $avenir;
 		color: #fff;
-		font-size: 10em;
-		padding-top:20px;
+		font-size: 3.5em;
+		padding-top:1.5em;
 		border: 0;
 
 		@media (max-width: #{$mobile-width}) {
-  			font-size: 5em;
+  			font-size: 2em;
   		}
 	}
 

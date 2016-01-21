@@ -17,10 +17,10 @@ header{
      font-size: 0;
      display: inline-block;
      color: transparent; 
-     background: #000 url('../images/logo.png') 60px 15px no-repeat;
+     background: transparent url('../images/csw_logo_white.svg') 20px -27px no-repeat;
      width: 230px;
      height: 120px;
-     background-size: 110px 80px;
+     background-size: 175px auto;
      box-sizing: border-box;
      float: left;
 
@@ -31,9 +31,10 @@ header{
 
 .slicknav_brand {
 	height: 80px;
-	padding-top: 12px;
+	padding-top: 0;
 	img {
-		max-width: 78px;
+		max-width: 110px;
+		margin-top: -15px;
 	}
 }
 
@@ -94,6 +95,7 @@ header{
 	ul{
 		float: right;
 		padding-top:70px;
+		font-family: $avenir;
 	}
 
 	ul li{
