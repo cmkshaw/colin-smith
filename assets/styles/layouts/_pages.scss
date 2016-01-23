@@ -8,7 +8,12 @@ body.home{
 	@media (max-width: #{$mobile-sm}) {
 		background-image: url('../images/home-bg-mobile-sm.jpg');
 	}
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    	background-size: initial;
+	}
 }
+
+
 
 //PAGE SPEICIFC
 .banner{
