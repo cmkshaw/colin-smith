@@ -1,6 +1,4 @@
-<footer class="content-info">
-
-  
+<footer class="content-info"> 
   <?php 
    	if ( is_page_template('template-products.php') || is_singular('product')  ) {
   		get_template_part('templates/widget-product');
@@ -13,6 +11,6 @@
       <li class="social-email"><a href="mailto:info@colinsmithwoodworking.com">Email</a></li>
     </ul>
     &copy; Colin Smith Woodworking <?php echo date("Y"); ?>
-    <a class="pull-right hide-mobile" href="/sitemap">Sitemap</a>
+    <!-- <a class="pull-right hide-mobile" href="/sitemap">Sitemap</a> -->
   </div>
 </footer>
