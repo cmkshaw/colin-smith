@@ -3,10 +3,10 @@ body {
 	font-family: $robotolight;
 	color: $copy-grey;
 	line-height:1.5;
-	font-size: 16px;
+	font-size: 17px;
 
 	@media (max-width: #{$mobile-width}) {
-  		font-size: 14px;
+  		font-size: 15px;
   	}
 }
 
