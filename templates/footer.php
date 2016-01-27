@@ -1,6 +1,6 @@
 <footer class="content-info"> 
   <?php 
-   	if ( is_page_template('template-products.php') || is_singular('product')  ) {
+   	if ( is_page_template('template-products.php') || is_page( 'custom-made-furniture' )  || is_singular('product')  ) {
   		get_template_part('templates/widget-product');
   	}
   ?>

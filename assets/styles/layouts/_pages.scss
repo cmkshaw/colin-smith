@@ -1,6 +1,7 @@
 body.home{
 	background-image: url('../images/home-bg.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 	@media (max-width: #{$mobile-width}) {
 		background-image: url('../images/home-bg-mobile.jpg');
 		background-size: initial;
