@@ -8,6 +8,15 @@
   ga('send', 'pageview');
 
 </script>
+
+<video autoplay loop poster="<?php bloginfo('template_directory'); ?>/assets/images/custom.jpg" id="bgvid">
+    <source src="<?php bloginfo('template_directory'); ?>/assets/images/custom-30.mp4" type="video/mp4">
+</video>
+
+<div class="header-grey">
+  
+</div>
+
 <header class="banner clearfix">
   <div class="container">
   <ul class="social header-social">
